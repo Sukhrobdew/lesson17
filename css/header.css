@@ -1,0 +1,143 @@
+header {
+  background: #e5e5e5;
+}
+
+#navbar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: linear-gradient(to top, #ccffcc 11%, #ffccff 81%);
+}
+
+/* shrink------ */
+nav {
+  padding: 27px 0;
+}
+
+.navbar-shrink {
+  padding: 8px 0;
+  transition: 0.4s;
+  box-shadow: 0 -8px 0 10px rgb(221, 255, 214);
+}
+
+/* ----- */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links ul {
+  display: flex;
+  gap: 40px;
+}
+.links li {
+  display: flex;
+  align-items: center;
+}
+.links a {
+  font-size: var(--links-size);
+  color: var(--links-color);
+}
+
+.sign input {
+  border: 0;
+  font-size: var(--links-size);
+  background-color: transparent;
+  color: #0b132a;
+}
+.hamburger {
+  align-items: center;
+  display: flex;
+}
+
+.hamburger .up {
+  border: 0;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-size: 0.6rem;
+}
+.hamburger .switch {
+  padding-right: 10px;
+}
+
+.links a:hover {
+  color: white;
+  text-shadow: 1px 1px 1px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.hamburger .up:hover {
+  border: 1px solid #f53855;
+  border-radius: 50px;
+  color: #f53855;
+}
+
+.links,
+.sign {
+  display: none;
+}
+.hamburger .up {
+  display: none;
+}
+
+/* navbar responsive */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 70px;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #0ff7dc;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-decoration: underline;
+  padding: 15px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  font-size: 45px;
+  color: red;
+}
+
+/* ------toggle--end---- */
+
+/* ------------------------media--------- */
+@media (min-width: 900px) {
+  .links {
+    display: block;
+  }
+  .hamburger span {
+    display: none;
+  }
+  .hamburger .up {
+    display: block;
+  }
+}

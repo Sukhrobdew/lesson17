@@ -1,0 +1,78 @@
+/* back top */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(231, 79, 79);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(13, 11, 65);
+}
+
+@media (min-width:900px){
+    #myBtn {
+        font-size: 20px;
+        right: 30px;
+    }
+}
+
+/* light mode */
+.switch {
+}
+
+.switch input {
+  width: 55px;
+  background-color: rgb(12, 0, 0);
+  padding: 1px 2px;
+  height: 22px;
+  border-radius: 40px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.switch input::after {
+  content: "";
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 25px;
+  border-radius: 30px;
+  height: 20px;
+  transition: 0.5s;
+}
+
+.switch input:checked::after {
+  margin-left: 30px;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.switch input:checked {
+  background-color: rgb(174, 172, 172);
+}
+
+/* light */
+.dark-mode main{
+  background-color: black;
+  color: white;
+}
+.dark-mode {
+  --title-color: white;
+}
+
+
+
+
+/* all medias */
+
+
